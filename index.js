@@ -36,20 +36,19 @@ async function main() {
                 console.log("Files in the directory: ", fileList)
                 break;
             case '3':
-                const fileRead = readLineSync.question("What is the file name?" );
+                const fileRead = readLineSync.question("What is the file name? " );
                 const fileReadPath = path.join(baseDir, fileRead);
                 const fileReadContent = await fileManager.readFile(fileReadPath);
-                console.log("File content: ", fileReadContent);
+                console.log("File content: \n\n", fileReadContent);
                 break;
             case '4':
                 //5:16 Try e Catch video
                 console.log("4");
                 break;
             case '5':
-                console.log("5");
                 break;
             case '6':
-                console.log("Leaving... au revoir!");
+                console.log("\nLeaving... au revoir!\n");
                 return;
             default:
                 console.error("Unknown option, try again.")
