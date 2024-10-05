@@ -1,0 +1,1 @@
+file created after conversion from commonjs to esmodule

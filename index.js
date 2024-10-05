@@ -1,11 +1,12 @@
-const fileManager = require('./fileManager');
-const readLineSync = require('readline-sync');
-const path = require('path');
-const { read } = require('fs');
-
+import fileManager from './fileManager.js';
+import readLineSync from 'readline-sync';
+import path from 'path';
+import url, { fileURLToPath } from 'url';
 
 
 async function main() {
+
+    const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
     const baseDir = path.join(__dirname, "my_files");
 
